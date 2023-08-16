@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nikki register page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"></div>
+
+      <div class="form">
+        <span class="title">Create your account</span>
+        <span>organize your work</span>
+        <form action="" method="">
+          <label for="fname">first name</label>
+          <input name="firstname" type="text" placeholder="Write your first name"/>
+
+          <label for="lname">last name</label>
+          <input name="lastname" type="text" placeholder="Write your last name"/>
+
+          <label for="email">email address</label>
+          <input name="email" type="mail" placeholder="Enter your email"/>
+
+          <label for="password">password</label>
+          <input name="password" type="password" placeholder="Create a secure password"/>
+
+          <label for="rpassword">repeat password</label>
+          <input name="rpassword" type="password" placeholder="Write password one more time"/>
+
+          <button type="submit">Create account</button>
+        </form>
+        <span>Already have an account?<a href="https://www.google.com">Log in</a></span>
+      </div>
+
+      <div class="image">
+        <img id="myImage" src="src/pattern.png">
+      </div>   
+    </div>
+    <script>
+      var img = document.getElementById("myImage");
+      var form = document.getElementsByClassName("form")[0];
+      img.style.width = (window.innerWidth - form.offsetWidth) + "px";
+      form.style.width = (window.innerWidth - img.offsetWidth) + "px";
+    </script>
+  </body>
+</html>
