@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+      crossorigin="anonymous"
+    />
+    <title>Dashboard side bar menu</title>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image"><img src="logo.png" alt="logo" /> </span>
+          <div class="text header-text">
+            <span class="name">NIKKI</span>
+            <span class="profession">Always On Time</span>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-right-to-bracket toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <input type="search" placeholder="Search..." />
+          </li>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-list icon"></i>
+                <span class="text nav-text">All Tasks</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-calendar-day icon"></i>
+                <span class="text nav-text">Today's Tasks</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-rotate-right icon"></i>
+                <span class="text nav-text">Repeated Tasks</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-regular fa-thumbs-up icon"></i>
+                <span class="text nav-text">Comleated Tasks</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-box-open icon"></i>
+                <span class="text nav-text">Uncolmpleated Tasks</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-regular fa-trash-can icon"></i>
+                <span class="text nav-text">Deleated Tasks</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-content">
+          <li class="">
+            <a href="#">
+              <i class="fa-solid fa-right-from-bracket icon"></i>
+              <span class="text nav-text">Log Out</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="fa-solid fa-moon icon moon"></i>
+              <i class="fa-solid fa-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+
+            <div class="toggle-switch"><span class="switch"></span></div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
