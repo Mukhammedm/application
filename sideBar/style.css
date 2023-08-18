@@ -8,6 +8,7 @@
 :root {
   --body-color: #2cae5e;
   --sidebar-color: #fff;
+  /* --primary-color: #215ABA; */
   --primary-color: #695cfe;
   --primary-color-light: #f6f5ff;
   --togle-color: #dddd;
@@ -172,13 +173,14 @@ body.dark .sidebar header .toggle {
   transition: var(--tran-04);
 }
 
-.sidebar li a:hover {
+/* .sidebar li a:hover {
   background: var(--primary-color);
-}
+} */
 
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
-  color: var(--sidebar-color);
+  /* color: var(--sidebar-color); */
+  color: #215ABA;
 }
 
 body.dark .sidebar li a:hover .icon,
@@ -245,7 +247,7 @@ body.dark .menu-bar .mode i.moon {
 }
 
 switch::before {
-  content: "0";
+  content: "";
   position: absolute;
   height: 15px;
   width: 15px;
@@ -254,9 +256,27 @@ switch::before {
   left: 5px;
   transform: translateY(-50%);
   background: var(--sidebar-color);
-  transition: var(--tran-03);
+  transition: var(--tran-04);
 }
 
 body.dark .switch::before {
   left: 24px;
+}
+
+.cursor:hover {
+  cursor: pointer;
+}
+
+/* Nur Islom inserted code */
+/* .clicked-link {
+  color: #215ABA;
+} */
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
