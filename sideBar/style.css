@@ -11,7 +11,7 @@
   /* --primary-color: #215ABA; */
   --primary-color: #695cfe;
   --primary-color-light: #f6f5ff;
-  --togle-color: #dddd;
+  --togle-color: #333;
   --text-color: #707070;
 
   --tran-02: all 0.2s ease;
@@ -235,15 +235,7 @@ body.dark .menu-bar .mode i.moon {
   min-width: 60px;
   cursor: pointer;
   border-radius: 6px;
-  background: var(--primary-color-light);
-}
-
-.toggle-switch .switch {
-  position: relative;
-  height: 22px;
-  width: 44px;
-  border-radius: 25px;
-  background: var(--togle-color);
+  background: black/*var(--primary-color-light)*/;
 }
 
 switch::before {
@@ -279,4 +271,11 @@ body.dark .switch::before {
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.toggle-switch .switch {
+  position: relative;
+  height: 22px;
+  width: 44px;
+  border-radius: 25px;
 }
