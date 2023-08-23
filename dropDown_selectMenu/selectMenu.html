@@ -1,45 +1,54 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Select Menu</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======== CSS ======== -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous" />
+
+    <title>Custom Dropdown Select Menu</title>
+</head>
+
+<body>
     <div class="select-menu">
-      <div class="select-btn">
-        <span class="sBtn-text">Select your opinion</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </div>
-      <ul class="options">
-        <li class="option">
-          <i class="fa-solid fa-compact-disc" style="color: #171515"></i>
-          <span class="option-text">1 Option</span>
-        </li>
-        <li class="option">
-          <i class="fa-solid fa-compact-disc" style="color: #e1306c"></i>
-          <span class="option-text">2 Option</span>
-        </li>
-        <li class="option">
-          <i class="fa-solid fa-compact-disc" style="color: #0e76a8"></i>
-          <span class="option-text">3 Option</span>
-        </li>
-        <li class="option">
-          <i class="fa-solid fa-compact-disc" style="color: #4267b2"></i>
-          <span class="option-text">4 Option</span>
-        </li>
-        <li class="option">
-          <i class="fa-solid fa-compact-disc" style="color: #1da1f2"></i>
-          <span class="option-text">5 Option</span>
-        </li>
-      </ul>
+        <div class="select-btn">
+            <span class="sBtn-text">Choose Task Priority</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height=".9em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+            </svg>
+        </div>
+
+        <ul class="options">
+            <li class="option">
+                <i class="fa-solid fa-circle" style="color: #FF2F41; font-size: .8em;"></i>
+                <span class="option-text" style="color: #FF2F41;">Ordinary</span>
+            </li>
+            <li class="option">
+                <i class="fa-solid fa-circle" style="color: #FFBF00; font-size: .8em;"></i>
+                <span class="option-text" style="color: #D9A714;">Important</span>
+            </li>
+            <li class="option">
+                <i class="fa-solid fa-circle" style="color: #3062d4; font-size: .8em;"></i>
+                <span class="option-text" style="color: #3062d4;">Critical</span>
+            </li>
+        </ul>
+
+        <div class="alert alert-primary alert-dismissible fade show" role="alert"> <i class="bi bi-star me-1"></i> Bazi bir bo'limlar ishlab chiqilmoqda, hozirda asosiy bo'limlar ishlab turibdi. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
     </div>
-    <script src="main.js"></script>
-  </body>
+
+    <script src="./main.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
